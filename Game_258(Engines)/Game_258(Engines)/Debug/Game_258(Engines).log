@@ -1,0 +1,5 @@
+﻿  CoreEngine.cpp
+  Main.cpp
+  Generating Code...
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game_258(Engines)\Game_258(Engines)\CoreEngine.cpp(57,2): warning C4551:  function call missing argument list
+  Game_258(Engines).vcxproj -> C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game_258(Engines)\Debug\Game_258(Engines).exe

@@ -1,17 +1,14 @@
 #include "CoreEngine.h"
 
-CoreEngine* engine;
+
 
 int main(int argc, char* argv[]) {
-	 engine = new CoreEngine();
-	if (!engine->OnCreate("Game 258 Engine", 800, 600)) {
-		delete engine;
-		engine = nullptr;
+	
+	if (!CoreEngine::GetInstance()->OnCreate("Game Engines 4", 800, 600)) {
+		std::cout << "failed to create engine" << std::endl;
 		return 0;
-
 	}
-	engine->Run();
-	delete engine;
-	engine = nullptr;
+	CoreEngine::GetInstance()->Run();
 	return 0;
+	
 }

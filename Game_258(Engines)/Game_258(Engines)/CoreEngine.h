@@ -3,6 +3,10 @@
 
 #include "Window.h"
 #include <memory>
+#include "Timer.h"
+#include "Debug.h"
+#include "GameInterface.h"
+
 
 class CoreEngine
 {
@@ -18,6 +22,7 @@ public:
 	void Run();
 	bool GetIsRunning();
 
+	void SetGameInterface(GameInterface* gameInterface_);
 private:
 	CoreEngine();
 	~CoreEngine();
@@ -31,6 +36,10 @@ private:
 	Window* window;
 	bool isRunning;
 
+	Timer* timer;
+	unsigned int fps;
+
+	GameInterface* gameInterface;
 };
 
 #endif

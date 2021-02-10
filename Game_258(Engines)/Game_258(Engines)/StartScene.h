@@ -1,0 +1,18 @@
+#ifndef STARTSCENE_H
+#define STARTSCENE_H
+
+#include "Scene.h"
+#include "CoreEngine.h"
+
+
+class StartScene : public Scene
+{
+	StartScene();
+	virtual ~StartScene();
+
+	bool OnCreate() override;
+	void Update(const float deltaTime_) override;
+	void Render() override;
+};
+
+#endif

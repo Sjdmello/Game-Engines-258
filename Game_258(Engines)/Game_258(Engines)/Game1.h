@@ -2,6 +2,8 @@
 #define GAME1_h
 
 #include "CoreEngine.h"
+#include "StartScene.h"
+#include "GameScene.h"
 
 class Game1: public GameInterface
 {
@@ -12,6 +14,11 @@ public:
 	bool OnCreate() override;
 	void Update(const float deltaTime_) override;
 	void Render() override;
+
+private:
+	int currentSceneNum;
+	Scene* currentScene;
+	void BuildScene();
 
 
 };

@@ -129,16 +129,21 @@
   <ItemGroup>
     <ClCompile Include="CoreEngine.cpp" />
     <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Game1.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StartScene.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CoreEngine.h" />
     <ClInclude Include="Debug.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="Game1.h" />
     <ClInclude Include="GameInterface.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="StartScene.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

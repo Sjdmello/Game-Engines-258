@@ -37,13 +37,14 @@ bool Window::OnCreate(std::string name_, int width_, int height_)
 	context = SDL_GL_CreateContext(window);
 	SetPostAttributes();
 
-	GLenum err = glewInit();  // a little confusing glew = using opengl?? 
+	GLenum err = glewInit();   
 	if (err != GLEW_OK) {
 		Debug::Error("Failed to initialize GLEW", "Window.cpp", __LINE__);
 		return false;
 	}
 	glEnable(GL_DEPTH_TEST);
-	std::cout << "OpenGL version:" << glGetString(GL_VERSION) << std::endl;
+	Debug::Info("OpenGL version:" + std::string((char*)glGetString(GL_VERSION)), "Window.cpp", __LINE__);
+	//std::cout << "OpenGL version:" << glGetString(GL_VERSION) << std::endl;
 	return true;
 }
 

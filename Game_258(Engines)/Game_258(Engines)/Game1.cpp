@@ -16,16 +16,23 @@ bool Game1::OnCreate()
 {
     if (CoreEngine::GetInstance()->GetCurrentScene() == 0) {
         currentScene = new StartScene();
-        currentSceneNum = 0;
+        currentSceneNum = 1;
+        //CoreEngine::GetInstance()->SetCurrentScene(currentSceneNum);
         return currentScene->OnCreate();
-    }
 
-    std::cout << "Engines scene isn't initialized to 0" << std::endl;
+;
+    }
+ Debug::Error("Engines scene isn't initialized to 0", "Game1.cpp", __LINE__);
+   
+
+
     return false;
 }
 
 void Game1::Update(const float deltaTime_)
 {
+   
+
     if (currentSceneNum != CoreEngine::GetInstance()->GetCurrentScene()) {
         BuildScene();
     }
@@ -42,7 +49,7 @@ void Game1::BuildScene()
     delete currentScene;
     currentScene = nullptr;
 
-    switch (CoreEngine::GetInstance()->GetCurrentScene()) {
+    switch (currentSceneNum) {
     case 1:
         currentScene = new GameScene();
         break;

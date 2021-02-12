@@ -1,5 +1,9 @@
 #include "StartScene.h"
 
+StartScene::StartScene() : Scene()
+{
+}
+
 StartScene::~StartScene()
 {
 }

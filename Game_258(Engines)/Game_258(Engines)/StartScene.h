@@ -5,8 +5,8 @@
 #include "CoreEngine.h"
 
 
-class StartScene : public Scene
-{
+class StartScene : public Scene{
+public:
 	StartScene();
 	virtual ~StartScene();
 

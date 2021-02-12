@@ -1,12 +1,17 @@
 #include "GameScene.h"
 
+GameScene::GameScene() : Scene()
+{
+
+}
+
 GameScene::~GameScene()
 {
 }
 
 bool GameScene::OnCreate()
 {
-	std::cout << "start scene" << std::endl;
+	std::cout << "game scene" << std::endl;
 	return true;
 }
 

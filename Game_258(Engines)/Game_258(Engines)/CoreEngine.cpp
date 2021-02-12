@@ -41,6 +41,7 @@ bool CoreEngine::OnCreate(std::string name_, int width_, int height_)
 	}
 
 	Debug::Info("Everthing worked", "CoreEngine.cpp",__LINE__);
+	timer = new Timer();
 	timer->Start();
 	return isRunning = true;
 }
@@ -89,7 +90,7 @@ void CoreEngine::Update(const float deltaTime_)
 		gameInterface->Update(deltaTime_);
 		std::cout << deltaTime_ << std::endl;
 	}
-	std::cout << deltaTime_ << std::endl;
+	//std::cout << deltaTime_ << std::endl;
 }
 
 void CoreEngine::Render()

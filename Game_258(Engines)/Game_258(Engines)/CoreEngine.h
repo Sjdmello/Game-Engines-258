@@ -7,6 +7,7 @@
 #include "Debug.h"
 #include "GameInterface.h"
 #include "Scene.h"
+#include "GameObject.h"
 
 
 class CoreEngine

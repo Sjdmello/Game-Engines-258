@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Game\Scenes">
       <UniqueIdentifier>{2b013934-13e8-4296-bfed-b097dc723dfb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Rendering">
+      <UniqueIdentifier>{36b0effb-ccd8-4fee-81d9-8d81758b8c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rendering\3D">
+      <UniqueIdentifier>{42595aec-30b8-473e-9559-8c430a66db26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -53,6 +59,15 @@
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
       <Filter>Source Files\Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\Rendering\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Rendering\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Rendering\3D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +97,15 @@
     </ClInclude>
     <ClInclude Include="GameScene.h">
       <Filter>Source Files\Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Source Files\Rendering\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source Files\Rendering\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Source Files\Rendering\3D</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

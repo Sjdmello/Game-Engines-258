@@ -3,7 +3,7 @@
 Mesh::Mesh(std::vector<Vertex>& vertexList_) 
 	:VAO(0),VBO(0), vertexList(std::vector<Vertex>()){
 
-	vertexList = vertexList;
+	vertexList = vertexList_;
 	GenerateBuffers();
 }
 

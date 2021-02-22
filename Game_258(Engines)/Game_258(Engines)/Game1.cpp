@@ -16,7 +16,7 @@ bool Game1::OnCreate()
 {
     if (CoreEngine::GetInstance()->GetCurrentScene() == 0) {
         currentScene = new StartScene();
-        currentSceneNum = 1;
+        currentSceneNum = 0;
         //CoreEngine::GetInstance()->SetCurrentScene(currentSceneNum);
         return currentScene->OnCreate();
 
@@ -49,7 +49,7 @@ void Game1::BuildScene()
     delete currentScene;
     currentScene = nullptr;
 
-    switch (currentSceneNum) {
+    switch (CoreEngine::GetInstance()->GetCurrentScene()) {
     case 1:
         currentScene = new GameScene();
         break;

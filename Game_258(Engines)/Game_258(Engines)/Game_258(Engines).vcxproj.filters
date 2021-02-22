@@ -34,6 +34,12 @@
     <Filter Include="Source Files\Rendering\3D">
       <UniqueIdentifier>{42595aec-30b8-473e-9559-8c430a66db26}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Engine\Graphics">
+      <UniqueIdentifier>{888b7b27-7827-4522-8e07-683a1b8dca9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Shaders">
+      <UniqueIdentifier>{489e4e99-78aa-4f3e-a546-da5cea5e7cd1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -68,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files\Rendering\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderHandler.cpp">
+      <Filter>Source Files\Engine\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,5 +116,16 @@
     <ClInclude Include="Mesh.h">
       <Filter>Source Files\Rendering\3D</Filter>
     </ClInclude>
+    <ClInclude Include="ShaderHandler.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ColourVertexShader.glsl">
+      <Filter>Source Files\Engine\Shaders</Filter>
+    </None>
+    <None Include="ColourFragmentShader.glsl">
+      <Filter>Source Files\Engine\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -9,6 +9,7 @@
 #include "Scene.h"
 #include "GameObject.h"
 #include "ShaderHandler.h"
+#include "Camera.h"
 
 
 class CoreEngine
@@ -27,8 +28,13 @@ public:
 	bool GetIsRunning() const;
 	int GetCurrentScene() const;
 
+	float GetScreenWidth() const;
+	float GetScreenHeight() const;
+	Camera* GetCamera() const;
+
 	void SetGameInterface(GameInterface* gameInterface_);
 	void SetCurrentScene(int sceneNum_);
+	void SetCamera(Camera* camera_);
 private:
 	CoreEngine();
 	~CoreEngine();
@@ -48,6 +54,8 @@ private:
 	GameInterface* gameInterface;
 
 	int currentSceneNum;
+
+	Camera* camera;
 };
 
 #endif

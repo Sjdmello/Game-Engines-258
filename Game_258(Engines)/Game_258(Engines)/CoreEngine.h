@@ -10,6 +10,7 @@
 #include "GameObject.h"
 #include "ShaderHandler.h"
 #include "Camera.h"
+#include "Texturehandler.h"
 
 
 class CoreEngine

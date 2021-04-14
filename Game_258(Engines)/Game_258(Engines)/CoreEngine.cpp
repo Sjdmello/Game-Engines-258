@@ -33,6 +33,7 @@ bool CoreEngine::OnCreate(std::string name_, int width_, int height_)
 	}
 
 	ShaderHandler::GetInstance()->CreateProgram("colourShader", "ColourVertexShader.glsl", "ColourFragmentShader.glsl");
+	ShaderHandler::GetInstance()->CreateProgram("basicShader", "VertexShader.glsl", "FragmentShader.glsl");
 
 	if (gameInterface) {
 		if (!gameInterface->OnCreate()) {
@@ -110,9 +111,9 @@ void CoreEngine::Update(const float deltaTime_)
 {
 	if (gameInterface) {
 		gameInterface->Update(deltaTime_);
-		std::cout << deltaTime_ << std::endl;
+	
 	}
-	//std::cout << deltaTime_ << std::endl;
+	
 }
 
 void CoreEngine::Render()
@@ -127,6 +128,7 @@ void CoreEngine::Render()
 
 void CoreEngine::OnDestroy()
 {
+	Texturehandler::GetInstance()->OnDestroy();
 	ShaderHandler::GetInstance()->OnDestroy();
 	delete gameInterface;
 	gameInterface = nullptr;

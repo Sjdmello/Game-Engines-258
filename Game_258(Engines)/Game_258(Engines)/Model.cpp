@@ -1,14 +1,15 @@
 #include "Model.h"
 
-Model::Model(GLuint shaderProgram_, glm::vec3 position_ , 
-	float angle_, glm::vec3 rotation_ , glm::vec3 scale_ ): meshes(std::vector<Mesh*>()),position(glm::vec3()),angle(0.0f),
-	rotation(glm::vec3(0.0f,1.0f,0.0f)),scale(glm::vec3(1.0f))
+
+Model::Model(const std::string& objPath_, const std::string& matPath_, GLuint shaderProgram_):
+	meshes(std::vector<Mesh*>()), shaderProgram(0), modelInstances(std::vector<glm::mat4>())
 {
 	shaderProgram = shaderProgram_;
-	position = position_;
-	angle = angle_;
-	rotation = rotation_;
-	scale = scale_;
+	meshes.reserve(10);
+	modelInstances.reserve(5);
+	OBJ = new LoadOBJModel;
+	OBJ->LoadModel(objPath_, matPath_);
+	LoadModel();
 
 }
 
@@ -21,13 +22,16 @@ Model::~Model()
 		}
 		meshes.clear();
 	}
+	if (modelInstances.size() > 0) {
+		modelInstances.clear();
+	}
 }
 
 void Model::Render(Camera*camera_)
 {
 	glUseProgram(shaderProgram);
 	for (auto m : meshes) {
-		m->Render(camera_,GetTransform());
+		m->Render(camera_, modelInstances);
 	}
 }
 
@@ -37,51 +41,39 @@ void Model::AddMesh(Mesh* mesh_)
 
 }
 
-glm::vec3 Model::GetPos() const
+unsigned int Model::CreateInstance(glm::vec3 position_, float angle_, glm::vec3 rotation_, glm::vec3 scale_)
 {
-	return position;
+	modelInstances.push_back(CreateTransform(position_, angle_, rotation_, scale_));
+	return modelInstances.size() - 1;
 }
 
-float Model::GetAngle() const
+void Model::UpdateInstance(unsigned int index_, glm::vec3 position_, float angle_, glm::vec3 rotation_, glm::vec3 scale_)
 {
-	return angle;
+	modelInstances[index_] = CreateTransform(position_, angle_, rotation_, scale_);
 }
 
-glm::vec3 Model::GetRotation() const
+glm::mat4 Model::getTransform(unsigned int index_) const
 {
-	return rotation;
+	return modelInstances[index_];
 }
 
-glm::vec3 Model::GetScale() const
+glm::mat4 Model::CreateTransform(glm::vec3 position_, float angle_, glm::vec3 rotation_, glm::vec3 scale_) const
 {
-	return scale;
-}
-
-void Model::SetPos(glm::vec3 position_)
-{
-	position = position_;
-}
-
-void Model::SetAngle(float angle_)
-{
-	angle = angle_;
-}
-
-void Model::SetRotation(glm::vec3 rotation_)
-{
-	rotation = rotation_;
-}
-
-void Model::SetScale(glm::vec3 scale_)
-{
-	scale = scale_;
-}
-
-glm::mat4 Model::GetTransform() const
-{
-	glm::mat4 model;
-	model = glm::translate(model, position);
-	model = glm::rotate(model, angle, rotation);
-	model = glm::scale(model, scale);
+    glm::mat4 model;
+	model = glm::translate(model, position_);
+	model = glm::rotate(model, angle_, rotation_);
+	model = glm::scale(model, scale_);
 	return model;
 }
+
+void Model::LoadModel()
+{
+	for (int i = 0; i < OBJ->GetSubMeshes().size(); i++) {
+		meshes.push_back(new Mesh(OBJ->GetSubMeshes()[i], shaderProgram));
+	}
+	delete OBJ;
+	OBJ = nullptr;
+}
+
+
+

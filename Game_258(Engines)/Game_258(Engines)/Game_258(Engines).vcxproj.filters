@@ -40,6 +40,12 @@
     <Filter Include="Source Files\Engine\Shaders">
       <UniqueIdentifier>{489e4e99-78aa-4f3e-a546-da5cea5e7cd1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Textures">
+      <UniqueIdentifier>{f50fd24e-4ffd-4f28-82a0-8bd5b5410a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\FX">
+      <UniqueIdentifier>{c7eb61b7-7eff-487d-9f6a-40be9a341f0b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -80,6 +86,15 @@
     </ClCompile>
     <ClCompile Include="Camera.cpp">
       <Filter>Source Files\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Texturehandler.cpp">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSource.cpp">
+      <Filter>Source Files\Engine\FX</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadOBJModel.cpp">
+      <Filter>Source Files\Rendering\3D</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +140,15 @@
     <ClInclude Include="Camera.h">
       <Filter>Source Files\Engine\Core</Filter>
     </ClInclude>
+    <ClInclude Include="Texturehandler.h">
+      <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSource.h">
+      <Filter>Source Files\Engine\FX</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadOBJModel.h">
+      <Filter>Source Files\Rendering\3D</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ColourVertexShader.glsl">
@@ -133,5 +157,16 @@
     <None Include="ColourFragmentShader.glsl">
       <Filter>Source Files\Engine\Shaders</Filter>
     </None>
+    <None Include="VertexShader.glsl">
+      <Filter>Source Files\Engine\Shaders</Filter>
+    </None>
+    <None Include="FragmentShader.glsl">
+      <Filter>Source Files\Engine\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CheckerboardTexture.png">
+      <Filter>Source Files\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>

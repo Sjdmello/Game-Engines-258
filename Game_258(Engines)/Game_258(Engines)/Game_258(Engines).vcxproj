@@ -133,11 +133,14 @@
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Game1.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="LoadOBJModel.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Mesh.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="ShaderHandler.cpp" />
     <ClCompile Include="StartScene.cpp" />
+    <ClCompile Include="Texturehandler.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
@@ -149,17 +152,25 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Game1.h" />
     <ClInclude Include="GameInterface.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="LoadOBJModel.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="ShaderHandler.h" />
     <ClInclude Include="StartScene.h" />
+    <ClInclude Include="Texturehandler.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ColourFragmentShader.glsl" />
     <None Include="ColourVertexShader.glsl" />
+    <None Include="FragmentShader.glsl" />
+    <None Include="VertexShader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CheckerboardTexture.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

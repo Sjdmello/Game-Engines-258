@@ -77,7 +77,42 @@ void LoadOBJModel::LoadModel(const std::string& filePath_)
 			v >> x >> y >> z;
 			vertices.push_back(glm::vec3(x, y, z));
 		}
-		else if (line.substr(0, 7) == "usetl ") {
+		if (line.substr(0, 3) == "vn ") {
+			std::stringstream v(line.substr(3));
+			float n1, n2, n3;
+			v >> n1 >> n2 >> n3;
+			normals.push_back(glm::vec3(n1, n2, n3));
+		}
+		if (line.substr(0, 3) == "vt ") {
+			std::stringstream v(line.substr(3));
+			float t1, t2;
+			v >> t1 >> t2;
+			textureCoords.push_back(glm::vec2(t1, t2));
+
+		}
+		if (line.substr(0, 2) == "f ") {
+			std::stringstream v(line.substr(2));
+			char slash;
+			unsigned int a, b, c, aT, bT, cT, aN, bN, cN;
+			v >> a >> slash >> aT >> slash >> aN >>
+				b >> slash >> bT >> slash >> bN >>
+				c >> slash >> cT >> slash >> cN;
+			a--, b--, c--;
+			aT--, bT--,cT--;
+			aN--,bN--,cN--;
+			indices.push_back(a);
+			indices.push_back(b);
+			indices.push_back(c);
+
+			normalIndices.push_back(aN);
+			normalIndices.push_back(bN);
+			normalIndices.push_back(cN);
+
+			textureIndices.push_back(aT);
+			textureIndices.push_back(bT);
+			textureIndices.push_back(cT);
+		}
+		else if (line.substr(0, 7) == "usemtl ") {
 			if (indices.size() > 0) {
 				PostProcessing();
 			}

@@ -38,6 +38,6 @@ vec3 specular = (spec*light.spec)*light.lightColour;
 
 vec3 result = amb + diffuse + specular;
 
-fcolour = vec4(result,1.0f);
-
+//fcolour = vec4(result,1.0f);
+fcolour = texture(inputTexture,TextCoords);
 }

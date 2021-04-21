@@ -130,6 +130,8 @@ void CoreEngine::OnDestroy()
 {
 	Texturehandler::GetInstance()->OnDestroy();
 	ShaderHandler::GetInstance()->OnDestroy();
+	SceneGraph::GetInstance()->OnDestroy();
+	MaterialHandler::GetInstance()->OnDestroy();
 	delete gameInterface;
 	gameInterface = nullptr;
 

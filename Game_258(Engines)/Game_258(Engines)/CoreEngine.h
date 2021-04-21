@@ -11,6 +11,8 @@
 #include "ShaderHandler.h"
 #include "Camera.h"
 #include "Texturehandler.h"
+#include "SceneGraph.h"
+#include "MaterialHandler.h"
 
 
 class CoreEngine

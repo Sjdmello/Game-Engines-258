@@ -2,7 +2,6 @@
 
 in vec3 Normal;
 in vec2 TextCoords;
-in vec3 Colour;
 in vec3 FragPos;
 
 uniform sampler2D inputTexture;

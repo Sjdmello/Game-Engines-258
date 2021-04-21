@@ -6,19 +6,20 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include"Camera.h"
+#include "MaterialHandler.h"
 
 struct Vertex {
 	glm::vec3 pos;
 	glm::vec3 normal;
 	glm::vec2 TextCoords;
-	glm::vec3 colour;
+	
 
 };
 
 struct SubMesh {
 	std::vector<Vertex> vertexList;
 	std::vector<unsigned int> meshIndices;
-	GLuint textureID;
+	Material material;
 };
 
 class Mesh

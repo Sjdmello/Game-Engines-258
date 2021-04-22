@@ -5,6 +5,7 @@
 #include "Mesh.h"
 #include "Texturehandler.h"
 #include "MaterialLoader.h"
+#include "BoundingBox.h"
 
 class LoadOBJModel
 {
@@ -14,6 +15,7 @@ public:
 
 	void LoadModel(const std::string& objFilePath_, const std::string& mtlFilePath_);
 	std::vector<SubMesh> GetSubMeshes();
+	BoundingBox GetBoundingBox()const;
 
 private:
 	void PostProcessing();
@@ -29,6 +31,7 @@ private:
 	std::vector <SubMesh> submeshes;
 	
 	Material currentMaterial;
+	BoundingBox boundingBox;
 
 };
 #endif

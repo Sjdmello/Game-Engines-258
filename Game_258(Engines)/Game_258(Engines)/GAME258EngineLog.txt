@@ -1,5 +1,5 @@
 [INFO]: OpenGL version:4.5.0 - Build 27.20.100.8681in:Window.cppon line:46
-[INFO]: Everthing workedin:CoreEngine.cppon line:46
+[INFO]: Everthing workedin:CoreEngine.cppon line:49
 [INFO]: Creating GameScenein:GameScene.cppon line:17
 [ERROR]: Surface for texturediceTexturefailed to createin:Texturehandler.cppon line:44
 [ERROR]: Surface for textureApple_Stemfailed to createin:Texturehandler.cppon line:44

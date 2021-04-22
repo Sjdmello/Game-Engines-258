@@ -20,6 +20,7 @@ public:
 	glm::mat4 getTransform(unsigned int index_) const;
 
 	GLuint GetShaderProgram() const;
+	BoundingBox GetBoundingBox() const;
 
 private:
 	glm::mat4 CreateTransform(glm::vec3 position_, float angle_, glm::vec3 rotation_, glm::vec3 scale_) const;
@@ -28,6 +29,7 @@ private:
 	GLuint shaderProgram;
 	std::vector<glm::mat4> modelInstances;
 	LoadOBJModel* OBJ;
+	BoundingBox boundinBox;
 };
 
 #endif

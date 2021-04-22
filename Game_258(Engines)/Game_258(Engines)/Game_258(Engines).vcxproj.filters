@@ -46,6 +46,9 @@
     <Filter Include="Source Files\Engine\FX">
       <UniqueIdentifier>{c7eb61b7-7eff-487d-9f6a-40be9a341f0b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Engine\Math">
+      <UniqueIdentifier>{824ed257-77b3-431c-919e-801b80beb8fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -104,6 +107,12 @@
     </ClCompile>
     <ClCompile Include="MaterialLoader.cpp">
       <Filter>Source Files\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="EventListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEventListener.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +175,15 @@
     </ClInclude>
     <ClInclude Include="MaterialLoader.h">
       <Filter>Source Files\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEventListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Source Files\Engine\Math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

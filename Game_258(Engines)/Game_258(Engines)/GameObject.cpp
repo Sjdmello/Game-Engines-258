@@ -1,8 +1,8 @@
 #include "GameObject.h"
 
 
-GameObject::GameObject(Model* model_, glm::vec3 position_): model(nullptr), angle(0.0f), rotation(glm::vec3(0.0f, 1.0f, 0.0f)), scale(glm::vec3(1.0f)),
-modelInstance(0)
+GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr), angle(0.0f), rotation(glm::vec3(0.0f, 1.0f, 0.0f)), scale(glm::vec3(1.0f)),
+modelInstance(0), hit(false)
 {
 	model = model_;
 	position = position_;
@@ -59,6 +59,11 @@ std::string GameObject::GetTag() const
 	return tag;
 }
 
+bool GameObject::GetHit() const
+{
+	return hit;
+}
+
 void GameObject::SetPos(glm::vec3 position_)
 {
 	position = position_;
@@ -100,6 +105,14 @@ void GameObject::SetScale(glm::vec3 scale_)
 void GameObject::SetTag(std::string tag_)
 {
 	tag = tag_;
+}
+
+void GameObject::SetHit(bool hit_, int buttonType_)
+{
+	hit = hit_;
+	if (hit) {
+		std::cout << tag << "was hit" << std::endl;
+	}
 }
 
 BoundingBox GameObject::GetBoundingBox() const

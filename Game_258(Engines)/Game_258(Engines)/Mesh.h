@@ -36,6 +36,7 @@ private:
 	SubMesh subMesh;
 	GLuint shaderProgram;
 	GLuint modelLoc;
+	GLuint MatData;
 	GLuint textureID;
 	GLuint viewLoc, projectionLoc,textureLoc;
 	GLuint CameraLoc, LightPosLoc, LightDiffLoc, LightAmbLoc, LightSpecLoc,LightColourLoc;

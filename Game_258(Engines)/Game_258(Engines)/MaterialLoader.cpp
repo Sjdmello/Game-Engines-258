@@ -24,10 +24,46 @@ void MaterialLoader::LoadMaterial(std::string filePath_)
 			m.diffuseMap = LoadTexture(matName);
 			m.name = matName;
 		}
+		if (line.substr(0,7)== "Ns ") {
+			if (m.shininess != 0) {
+				MaterialHandler::GetInstance()->AddMaterial(m);
+				m = Material();
+			}
+			matName = line.substr(7);
+			m.shininess = LoadTexture(matName);
+			m.name = matName;
+		}
+		if (line.substr(4, 1) == "d ") {
+			if (m.transparency != 0) {
+				MaterialHandler::GetInstance()->AddMaterial(m);
+				m = Material();
+			}
+			matName = line.substr(1);
+			m.transparency = LoadTexture(matName);
+			m.name = matName;
+		}
+		if (line.substr(1, 3) == "Kd ") {
+			if (m.diffuse != 0) {
+				MaterialHandler::GetInstance()->AddMaterial(m);
+				m = Material();
+			}
+			matName = line.substr(7);
+			m.diffuse = LoadTexture(matName);
+			m.name = matName;
 	}
+		if (line.substr(2, 3) == "Ks ") {
+			if (m.specular != 0) {
+				MaterialHandler::GetInstance()->AddMaterial(m);
+				m = Material();
+			}
+			matName = line.substr(7);
+			m.specular = LoadTexture(matName);
+			m.name = matName;
+		}
 	if (m.diffuseMap != 0) {
 		MaterialHandler::GetInstance()->AddMaterial(m);
 	}
+	
 	in.close();
 }
 

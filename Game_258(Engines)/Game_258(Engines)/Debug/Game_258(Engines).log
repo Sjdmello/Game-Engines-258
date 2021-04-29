@@ -1,54 +1,26 @@
-﻿  Camera.cpp
+﻿  CollisionDection.cpp
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\CollisionDection.cpp(25,12): error C2374: 'rayDirWorld': redefinition; multiple initialization
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\CollisionDection.cpp(22): message : see declaration of 'rayDirWorld'
+  CollisionHandler.cpp
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\CollisionHandler.cpp(44): error C2102: '&' requires l-value
   CoreEngine.cpp
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\CoreEngine.cpp(169,2): warning C4551: function call missing argument list
-  EventListener.cpp
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\CoreEngine.cpp(172,2): warning C4551: function call missing argument list
+  MaterialLoader.cpp
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  GameObject.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  GameScene.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Game1.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  LoadOBJModel.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Main.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Mesh.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Mesh.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
-  Model.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Model.cpp(76,20): warning C4018: '<': signed/unsigned mismatch
-  MouseEventListener.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  SceneGraph.cpp
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\MaterialLoader.cpp(33,29): warning C4244: '=': conversion from 'GLuint' to 'float', possible loss of data
   StartScene.cpp
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Game_258(Engines)\Debug.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Generating Code...
-  Game_258(Engines).vcxproj -> C:\Users\sjdme\Desktop\School\Year 2\Game Engines4\Game-Engines-258\Game_258(Engines)\Debug\Game_258(Engines).exe

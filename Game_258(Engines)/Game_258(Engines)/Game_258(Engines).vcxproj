@@ -128,9 +128,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CollisionDection.cpp" />
+    <ClCompile Include="CollisionHandler.cpp" />
     <ClCompile Include="CoreEngine.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="EventListener.cpp" />
+    <ClCompile Include="Frustum.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Game1.cpp" />
@@ -152,9 +155,12 @@
   <ItemGroup>
     <ClInclude Include="BoundingBox.h" />
     <ClInclude Include="Camera.h" />
+    <ClInclude Include="CollisionDection.h" />
+    <ClInclude Include="CollisionHandler.h" />
     <ClInclude Include="CoreEngine.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="EventListener.h" />
+    <ClInclude Include="Frustum.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Game1.h" />
@@ -166,6 +172,7 @@
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="MouseEventListener.h" />
+    <ClInclude Include="Ray.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneGraph.h" />
     <ClInclude Include="ShaderHandler.h" />
